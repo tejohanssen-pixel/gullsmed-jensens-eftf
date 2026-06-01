@@ -3,6 +3,7 @@ hero-test.zip
 token-audit/
 
 assets/*
+!assets/favicon.svg
 !assets/store-wide-counter.jpg
 !assets/store-portrait.jpg
 !assets/workshop-torch.jpg

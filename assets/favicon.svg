@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Gullsmed Jensens Eftf.">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <g fill="none" stroke="#0f0f0f" stroke-linecap="round" stroke-linejoin="round" stroke-width="20">
+    <path d="M172 116h168l-40 64h-88z"/>
+    <path d="M172 116l40 64"/>
+    <path d="M340 116l-40 64"/>
+    <path d="M212 116l44 64 44-64"/>
+    <circle cx="256" cy="296" r="132"/>
+    <circle cx="256" cy="296" r="94"/>
+  </g>
+</svg>
