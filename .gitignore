@@ -1,0 +1,12 @@
+.DS_Store
+hero-test.zip
+token-audit/
+
+assets/*
+!assets/store-wide-counter.jpg
+!assets/store-portrait.jpg
+!assets/workshop-torch.jpg
+!assets/workbench-tools.jpg
+!assets/wooden-drawer.jpg
+!assets/engraving-tool.jpg
+!assets/ring-display.jpg
