@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Google+Sans+Flex:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=no-faq-1" />
+    <link rel="stylesheet" href="./styles.css?v=status-copy-1" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -121,87 +121,97 @@
         </p>
       </section>
 
-      <section class="faq" aria-label="Hos oss får du" hidden>
+      <section class="faq" aria-label="Hos oss får du">
         <p class="faq__eyebrow">Stikk innom?</p>
 
         <div class="faq__items">
-          <details class="faq__item">
-            <summary class="faq__summary">
+          <div class="faq__item" data-hover-image="./assets/workbench-tools.jpg" data-hover-rotation="-4deg">
+            <button class="faq__summary" type="button" aria-expanded="false" aria-controls="faq-panel-workshop">
               <span>Verksted</span>
               <span class="faq__icon" aria-hidden="true">
                 <svg viewBox="0 0 256 256" focusable="false">
                   <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" />
                 </svg>
               </span>
-            </summary>
-            <div class="faq__panel">
-              <p>
-                Vi hjelper deg med både små og store oppdrag på smykker og
-                klokker. Med lang erfaring og respekt for håndverket tar vi
-                vare på det du setter pris på.
-              </p>
-              <ul>
-                <li>Reparasjon av smykker</li>
-                <li>Loddearbeid og tilpasninger</li>
-                <li>Rensing og oppussing</li>
-                <li>Batteribytte</li>
-                <li>Klokkereimer og lenker</li>
-                <li>Service på klokker</li>
-                <li>Gravering</li>
-              </ul>
+            </button>
+            <div class="faq__panel" id="faq-panel-workshop" aria-hidden="true">
+              <div class="faq__panel-inner">
+                <p>
+                  Vi hjelper deg med både små og store oppdrag på smykker og
+                  klokker. Med lang erfaring og respekt for håndverket tar vi
+                  vare på det du setter pris på.
+                </p>
+                <ul>
+                  <li>Reparasjon av smykker</li>
+                  <li>Loddearbeid og tilpasninger</li>
+                  <li>Rensing og oppussing</li>
+                  <li>Batteribytte</li>
+                  <li>Klokkereimer og lenker</li>
+                  <li>Service på klokker</li>
+                  <li>Gravering</li>
+                </ul>
+              </div>
             </div>
-          </details>
+          </div>
 
-          <details class="faq__item">
-            <summary class="faq__summary">
+          <div class="faq__item" data-hover-image="./assets/ring-display.jpg" data-hover-rotation="3deg">
+            <button class="faq__summary" type="button" aria-expanded="false" aria-controls="faq-panel-shop">
               <span>Butikk</span>
               <span class="faq__icon" aria-hidden="true">
                 <svg viewBox="0 0 256 256" focusable="false">
                   <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" />
                 </svg>
               </span>
-            </summary>
-            <div class="faq__panel">
-              <p>
-                I butikken finner du et nøye utvalgt sortiment av smykker,
-                klokker og gaver til både hverdag og spesielle anledninger.
-              </p>
-              <ul>
-                <li>Smykker til dame og herre</li>
-                <li>Forlovelsesringer</li>
-                <li>Gifteringer</li>
-                <li>Klokker</li>
-                <li>Dåpsgaver</li>
-                <li>Konfirmasjonsgaver</li>
-                <li>Gaveartikler</li>
-              </ul>
+            </button>
+            <div class="faq__panel" id="faq-panel-shop" aria-hidden="true">
+              <div class="faq__panel-inner">
+                <p>
+                  I butikken finner du et nøye utvalgt sortiment av smykker,
+                  klokker og gaver til både hverdag og spesielle anledninger.
+                </p>
+                <ul>
+                  <li>Smykker til dame og herre</li>
+                  <li>Forlovelsesringer</li>
+                  <li>Gifteringer</li>
+                  <li>Klokker</li>
+                  <li>Dåpsgaver</li>
+                  <li>Konfirmasjonsgaver</li>
+                  <li>Gaveartikler</li>
+                </ul>
+              </div>
             </div>
-          </details>
+          </div>
 
-          <details class="faq__item">
-            <summary class="faq__summary">
+          <div class="faq__item" data-hover-image="./assets/store-portrait.jpg" data-hover-rotation="-2deg">
+            <button class="faq__summary" type="button" aria-expanded="false" aria-controls="faq-panel-service">
               <span>Personlig service</span>
               <span class="faq__icon" aria-hidden="true">
                 <svg viewBox="0 0 256 256" focusable="false">
                   <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" />
                 </svg>
               </span>
-            </summary>
-            <div class="faq__panel">
-              <p>
-                Vi tar oss tid til å forstå hva du er ute etter og hjelper deg
-                med å finne den rette løsningen, enten det gjelder en gave, et
-                nytt smykke eller en reparasjon.
-              </p>
-              <ul>
-                <li>Hjelp til valg av gave</li>
-                <li>Veiledning ved kjøp av klokke</li>
-                <li>Rådgivning rundt ringer</li>
-                <li>Bestillingsvarer</li>
-                <li>Tilpasninger etter ønske</li>
-              </ul>
+            </button>
+            <div class="faq__panel" id="faq-panel-service" aria-hidden="true">
+              <div class="faq__panel-inner">
+                <p>
+                  Vi tar oss tid til å forstå hva du er ute etter og hjelper deg
+                  med å finne den rette løsningen, enten det gjelder en gave, et
+                  nytt smykke eller en reparasjon.
+                </p>
+                <ul>
+                  <li>Hjelp til valg av gave</li>
+                  <li>Veiledning ved kjøp av klokke</li>
+                  <li>Rådgivning rundt ringer</li>
+                  <li>Bestillingsvarer</li>
+                  <li>Tilpasninger etter ønske</li>
+                </ul>
+              </div>
             </div>
-          </details>
+          </div>
+        </div>
+
+        <div class="faq__hover-image" aria-hidden="true">
+          <img alt="" />
         </div>
       </section>
 
@@ -245,6 +255,14 @@
           <p>
             Hovedgata 25<br />
             4900 Tvedestrand
+          </p>
+          <p class="directions-link">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Hovedgata%2025%2C%204900%20Tvedestrand" rel="noreferrer">
+              <svg viewBox="0 0 256 256" aria-hidden="true" focusable="false">
+                <path d="M221.66,173.66l-32,32a8,8,0,0,1-11.32-11.32L196.69,176H80a24,24,0,0,1-24-24V40a8,8,0,0,1,16,0V152a8,8,0,0,0,8,8H196.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,221.66,173.66Z" />
+              </svg>
+              <span>Finn veien hit</span>
+            </a>
           </p>
           <p>
             <a href="mailto:post@gullsmedjensen.no">post@gullsmedjensen.no</a><br />
@@ -445,12 +463,152 @@
         statusBadge.classList.remove("is-hovered");
       });
 
+      if (statusBadge) {
+        statusBadge.classList.add("is-positionable");
+
+        let badgeDrag = null;
+
+        statusBadge.addEventListener("pointerdown", (event) => {
+          if (event.button !== 0) {
+            return;
+          }
+
+          const styles = getComputedStyle(statusBadge);
+
+          badgeDrag = {
+            startPointerX: event.clientX,
+            startPointerY: event.clientY,
+            startX: parseFloat(styles.getPropertyValue("--badge-drag-x")) || 0,
+            startY: parseFloat(styles.getPropertyValue("--badge-drag-y")) || 0
+          };
+
+          statusBadge.classList.add("is-dragging");
+          statusBadge.setPointerCapture(event.pointerId);
+          event.preventDefault();
+        });
+
+        statusBadge.addEventListener("pointermove", (event) => {
+          if (!badgeDrag) {
+            return;
+          }
+
+          const x = badgeDrag.startX + event.clientX - badgeDrag.startPointerX;
+          const y = badgeDrag.startY + event.clientY - badgeDrag.startPointerY;
+
+          statusBadge.style.setProperty("--badge-drag-x", `${Math.round(x)}px`);
+          statusBadge.style.setProperty("--badge-drag-y", `${Math.round(y)}px`);
+        });
+
+        const finishBadgeDrag = (event) => {
+          if (!badgeDrag) {
+            return;
+          }
+
+          statusBadge.classList.remove("is-dragging");
+          statusBadge.style.setProperty("--badge-drag-x", "0px");
+          statusBadge.style.setProperty("--badge-drag-y", "0px");
+
+          if (statusBadge.hasPointerCapture(event.pointerId)) {
+            statusBadge.releasePointerCapture(event.pointerId);
+          }
+
+          badgeDrag = null;
+        };
+
+        statusBadge.addEventListener("pointerup", finishBadgeDrag);
+        statusBadge.addEventListener("pointercancel", finishBadgeDrag);
+      }
+
+      const accordionItems = Array.from(document.querySelectorAll(".faq__item"));
+      const accordionList = document.querySelector(".faq__items");
+      const accordionHoverImage = document.querySelector(".faq__hover-image");
+      const accordionHoverImageElement = accordionHoverImage?.querySelector("img");
+      const canUseAccordionHover = () =>
+        window.matchMedia("(hover: hover) and (pointer: fine) and (min-width: 761px)").matches;
+
+      const hideAccordionHoverImage = () => {
+        accordionList?.classList.remove("has-hover");
+        accordionHoverImage?.classList.remove("is-visible");
+        accordionItems.forEach((item) => item.classList.remove("is-hovered"));
+      };
+
+      const showAccordionHoverImage = (item) => {
+        if (
+          !canUseAccordionHover() ||
+          item.classList.contains("is-open") ||
+          !accordionList ||
+          !accordionHoverImage ||
+          !accordionHoverImageElement
+        ) {
+          return;
+        }
+
+        const image = item.dataset.hoverImage;
+        const rotation = item.dataset.hoverRotation || "-3deg";
+
+        if (!image) {
+          return;
+        }
+
+        const faqBounds = accordionList.getBoundingClientRect();
+        const itemBounds = item.getBoundingClientRect();
+        const imageY = itemBounds.top - faqBounds.top + itemBounds.height / 2;
+
+        accordionHoverImageElement.src = image;
+        accordionHoverImage.style.setProperty("--faq-hover-y", `${Math.round(imageY)}px`);
+        accordionHoverImage.style.setProperty("--faq-hover-rotation", rotation);
+        accordionList.classList.add("has-hover");
+        accordionItems.forEach((otherItem) => {
+          otherItem.classList.toggle("is-hovered", otherItem === item);
+        });
+        accordionHoverImage.classList.add("is-visible");
+      };
+
+      const setAccordionState = (item, isOpen) => {
+        const panel = item.querySelector(".faq__panel");
+        const summary = item.querySelector(".faq__summary");
+
+        if (!panel || !summary) {
+          return;
+        }
+
+        item.classList.toggle("is-open", isOpen);
+        summary.setAttribute("aria-expanded", String(isOpen));
+        panel.setAttribute("aria-hidden", String(!isOpen));
+      };
+
+      accordionItems.forEach((item) => {
+        const summary = item.querySelector(".faq__summary");
+
+        item.addEventListener("pointerenter", () => {
+          showAccordionHoverImage(item);
+        });
+
+        item.addEventListener("pointerleave", () => {
+          hideAccordionHoverImage();
+        });
+
+        summary?.addEventListener("click", (event) => {
+          event.preventDefault();
+          hideAccordionHoverImage();
+
+          if (item.classList.contains("is-open")) {
+            setAccordionState(item, false);
+          } else {
+            accordionItems.forEach((otherItem) => {
+              setAccordionState(otherItem, otherItem === item);
+            });
+          }
+        });
+      });
+
+      window.addEventListener("resize", hideAccordionHoverImage);
+
       const minutesFromTime = (time) => {
         const [hours, minutes] = time.split(":").map(Number);
         return hours * 60 + minutes;
       };
 
-      const dayNames = ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"];
       const statusFlickMessages = {
         open: [
           "Velkommen innom",
@@ -459,22 +617,20 @@
           "Døren er åpen",
           "Vi er her"
         ],
-        closed: [
-          "Velkommen tilbake",
-          "Sees i morgen",
-          "Diamantene hviler",
-          "Vi lader opp",
-          "Snart tilbake"
-        ],
         closingSoon: [
           "Siste sjanse",
           "Rekker du innom?",
           "Døren lukker snart",
-          "Snart på vei hjem",
-          "Stenger snart"
+          "Snart på vei hjem"
+        ],
+        openingSoon: [
+          "Vi åpner snart",
+          "Snart på plass",
+          "Like før",
+          "Døren åpner straks"
         ]
       };
-      let activeFlickCategory = "closed";
+      let activeFlickCategory = "open";
 
       const randomItem = (items) => items[Math.floor(Math.random() * items.length)];
 
@@ -490,33 +646,6 @@
         statusBadge?.addEventListener(eventName, updateFlickMessage);
       });
 
-      const getNextOpeningLabel = (currentDay, currentMinutes) => {
-        for (let offset = 0; offset < 8; offset += 1) {
-          const day = (currentDay + offset) % 7;
-          const row = hourRows.find((hourRow) => Number(hourRow.dataset.day) === day);
-
-          if (!row?.dataset.open) {
-            continue;
-          }
-
-          const openMinutes = minutesFromTime(row.dataset.open);
-
-          if (offset === 0 && currentMinutes < openMinutes) {
-            return "Åpner i dag";
-          }
-
-          if (offset === 1) {
-            return "Åpner i morgen";
-          }
-
-          if (offset > 1) {
-            return `Åpner ${dayNames[day]}`;
-          }
-        }
-
-        return "Stengt";
-      };
-
       const updateOpeningState = (date = new Date()) => {
         const now = date;
         const currentDayNumber = now.getDay();
@@ -529,6 +658,10 @@
           Boolean(opens && closes) &&
           currentMinutes >= minutesFromTime(opens) &&
           currentMinutes < minutesFromTime(closes);
+        const openingSoon =
+          Boolean(opens) &&
+          currentMinutes < minutesFromTime(opens) &&
+          minutesFromTime(opens) - currentMinutes <= 60;
         const closingSoon =
           isOpen && minutesFromTime(closes) - currentMinutes <= 60;
 
@@ -540,15 +673,22 @@
         if (statusBadge) {
           const statusText = statusBadge.querySelector(".status-badge__text");
           const statusFlick = statusBadge.querySelector(".status-badge__flick");
-          const label = closingSoon
-            ? "Stenger snart"
-            : isOpen
-              ? "Åpent nå"
-              : getNextOpeningLabel(currentDayNumber, currentMinutes);
-          const flickCategory = closingSoon ? "closingSoon" : isOpen ? "open" : "closed";
+          const shouldShowBadge = isOpen || openingSoon;
 
-          statusBadge.hidden = false;
-          statusBadge.classList.toggle("is-closed", !isOpen);
+          statusBadge.hidden = !shouldShowBadge;
+          statusBadge.classList.remove("is-closed");
+
+          if (!shouldShowBadge) {
+            return;
+          }
+
+          const label = openingSoon
+            ? "Åpner straks"
+            : closingSoon
+              ? "Stenger snart"
+              : "Åpent nå";
+          const flickCategory = openingSoon ? "openingSoon" : closingSoon ? "closingSoon" : "open";
+
           statusBadge.setAttribute("aria-label", label);
 
           if (statusText) {
