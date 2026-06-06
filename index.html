@@ -588,6 +588,14 @@
           hideAccordionHoverImage();
         });
 
+        item.addEventListener("mouseenter", () => {
+          showAccordionHoverImage(item);
+        });
+
+        item.addEventListener("mouseleave", () => {
+          hideAccordionHoverImage();
+        });
+
         summary?.addEventListener("click", (event) => {
           event.preventDefault();
           hideAccordionHoverImage();
